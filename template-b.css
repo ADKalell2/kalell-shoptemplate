@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* -------------------- Fonts ------------------------ */
+
+/* If you want to use custom Google fonts, you can search for them at https://fonts.google.com 
+When you see a font you like, click on the red circle with the white plus sign in the upper right corner of the font's panel 
+A small window will pop up at the bottom of your browser. Open it for details.
+The window will provide the exact syntax to use in your link like the '@import' samples below, 
+and also how to list them as a font-family in a declaration (see 'font' classes below the links
+Note: you can't use any of the Google fonts as a font-family unless you have established the '@import' link first*/
+
+/* These links call up Google fonts to display in your web site. You can choose a single font one at a time like this: */
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+/* ...or you can select multiple fonts on the Google library and they will be separated by 'pipes' (the vertical lines) like this: */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat|Squada+One&display=swap');
+
+/* These are the Google fonts now being declared as CSS classes or HTML headers for use throughout the web site: */
+
+      .bigfont {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 84px;
+		color:#185E03;
+		  
+      }
+	  .decofont {
+        font-family: 'Squada One', cursive;
+        font-size: 26px;
+		color:#333;
+      }
+	   .scriptfont {
+        font-family: 'Dancing Script', cursive;
+        font-size: 20px;
+		color:#500;
+      }
+       .normalfont {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+		color:#2f2f2f;
+      }
+
+/* Remember, HTML header tags (<h1>, <h2>, etc) are valuable in helping search engines quickly adapt to your content structure*/
+	    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 44px;
+		color:#005;
+		margin-bottom:16px;
+      }
+
+	    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 34px;
+		color:#5D6DA7;
+		margin-bottom:12px;
+      }
+
+
+/* -------------------- Layout CSS for the HTML div tags that make up the main panels ------------------------ */
+
+/* Each of the classes created below has been given a descriptive name so 
+you can identify its location within in the HTML layout of your template*/
+
+body{background-color:#1D2143}
+
+/* This is the large box that contains all other divs in the layout and fills the web page area*/
+.mainbox{width:80%;margin-left:10%;margin-right:10%;margin-bottom:220px;}
+
+/* This is the top navigation section that extends horizonally across the top. */
+.topnavbox{
+	width: 100%;
+	height: 130px;
+	background-color: #BD1E1E;
+}
+
+/* This is the box that contains both the navigation panel and the starfield panel on one 'row'. It's background color is gray and will expand down the page*/
+.row1{width:100%;float:left;background-color:#999999;}
+
+/* This is the left side navigation panel. It has no background color or image so it is transparent*/
+.leftnavigationbox{width:21%;min-height:500px;padding:2%;float:left;}
+
+/* This is the class for all of the navigation buttons*/
+.navigationbuttons{
+	padding:8px;
+	margin:12px;
+	margin-right: 5%;
+	float:left;
+	background-color:#72758C;
+	text-align:center;
+	color:#fff;
+	font-family: 'Dancing Script', sans-serif;
+    font-size: 22px;
+	border-radius: 5px;
+	text-decoration:none;
+}
+
+/* This is the color the nav buttons will change to when you roll over them*/
+a:hover { 
+	background-color: #FFFFFF;
+	color:#000000;
+}
+/* This is the large central panel with the starscape background*/
+.promobox{
+	width: 96%;
+	heigth: auto;
+	min-height: 650px;
+	padding-top: 2%;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	float: left;
+	background-image: url(images/ArtDepo05.1.jpg);
+	background-size: cover;
+}
+
+/* This is the big text in the promo box*/
+.promotextbox{width:80%;float:left;margin-left:20px;margin-top:250px;font-family: 'Squada One', sans-serif;font-size: 100px;color:#F5A111;}
+
+/* This is the large central panel with the starscape background*/
+.normalpagebox{width:96%;min-height:500px;padding:2%;padding-bottom:4%;float:left;background-color:#ddd;}
+
+
+/* This is the brown box for the content at the bottom of the window*/
+.bottomboxcontent{
+	width: 100%;
+	float: left;
+	height: 80px;
+	padding-top: 8px;
+	background-color: #F24165;
+	padding-bottom: 8px;
+}
+
+.bottomboxcontentleft{
+	width: 30%;
+	float: left;
+	text-align: left;
+	font-family: 'Dancing Script', sans-serif;
+	font-size: 22px;
+	color: white;
+	background-color: #F24165;
+	padding-bottom: 8px;
+	padding-left: 40px;
+}
+
+.bottomboxcontentright{
+	width: 30%;
+	float: right;
+	padding-top: 8px;
+	/*text-align: center;*/
+	font-family: 'Dancing Script', sans-serif;
+	font-size: 22px;
+	color: white;
+	padding-right: 40px;
+}
+
+.smicons{
+	width: 35px;
+	height: 60px;
+	float: right;
+	margin-left: 15px;
+}
+	
+/* This is a final empty space at the bottom to add space between the bottom box from the bottom of the browser window*/
+.bottomspacer{width:100%;float:left;height:100px;}
